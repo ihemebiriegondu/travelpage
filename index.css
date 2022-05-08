@@ -30,6 +30,7 @@ section{
 
 .container article{
     margin-top: 3rem;
+    padding-bottom: 4rem;
 }
 
 .container h2{
@@ -150,7 +151,7 @@ section{
     margin: 0.8rem 1.5rem 1.25rem 0;
     color: rgb(255, 123, 0);
     font-size: 1.2rem;
-    padding: 1rem 1rem;
+    padding: 0.9rem 0.9rem;
     border-radius: 35px;
 }
 
@@ -165,8 +166,23 @@ section{
 
 #down{
     display: block;
-    margin: 4rem auto 0 auto;
+    margin: 0 auto 0 auto;
     width: 4.5rem;
+    transform: translateY(-2rem);
+    animation-name: downbutton;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes downbutton {
+    from{
+        transform: translateY(-2rem);
+    }
+    to{
+        transform: translateY(0);
+    }
 }
 
 #services-list{
@@ -271,6 +287,10 @@ section{
     font-family: none;
 }
 
+#after{
+    display: none;
+}
+
 .time{
     color: rgb(139, 37, 12);
     display: flex;
@@ -352,6 +372,38 @@ section{
     }
 }
 
+@media (max-width:1240px) {
+    .round-image {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    #first-rounded {
+        top: 24.4rem;
+        right: 6.25rem;
+    }
+    
+    #second-rounded {
+        top: 35rem;
+        right: 13.8rem;
+    }
+    
+    #third-rounded {
+        top: 39rem;
+        right: 26rem;
+    }
+
+    #first-section-div {
+        padding: 25rem 40rem 0 5rem;
+    
+    }
+
+    #discover{
+        margin-top: 3.3rem;
+        padding: 1.2rem 2.2rem;
+    }
+}
+
 @media (max-width:1220px) {
     .news-cards{
         width: 20rem;
@@ -361,9 +413,76 @@ section{
         margin: 0.8rem 1.5rem 2rem 0;
         padding: 0.5rem 0.5rem;
     }
+}
 
-    #first-section-div {
-        padding: 25rem 45rem 0 5rem;
-    
+@media (max-width:1200px) {
+    #top-destinations{
+        display: grid;
+        grid-template-columns: 30% 30%;
+        gap: 5rem 5rem;
     }
+
+    #top-destinations li{
+        width: 100%;
+        margin: 0;
+        border-radius: 0 40px 0 40px;
+    }
+
+    #news{
+        padding: 0 3rem;
+        display: grid;
+        gap: 5rem 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .news-cards{
+        width: 25rem;
+        height: 27rem;
+    }
+
+    .news-list{
+        margin-right: 0;
+    }
+
+    .news-cards{
+        width: 100%;
+    }
+
+    .news-list:nth-of-type(1){
+        grid-column: 1/span 2;
+    }
+
+    #first-of-type{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #first-of-type img{
+        object-fit: cover;
+        height: 100%;
+        width: 50%;
+    }
+
+    #first-type-news-card-para{
+        padding-top: 5rem;
+        padding-left: 5rem;
+    }
+
+    #before{
+        display: none;
+    }
+
+    #after{
+        display: inline-block;
+        font-family: none;
+    }
+
+    .explore a{
+        padding: 0.9rem 0.9rem;
+    }
+}
+
+@media (max-width:1024px) {
+    
 }
