@@ -163,6 +163,109 @@ cite p {
     }
 }
 
+@media (max-width:1024px) {
+    nav {
+        display: none;
+    }
+
+    header{
+        margin-top: 1rem;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    #last{
+        display: none;
+    }
+}
+
+@media (max-width:780px) {
+    #last {
+        display: none;
+    }
+
+    #name {
+        margin-left: 3rem;
+        width: 1rem;
+        display: block;
+    }
+
+    #name img {
+        width: 10rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    #name h1 {
+        font-size: 1.6rem;
+        padding: 0;
+        margin: -1.5rem 0 0 0;
+    }
+
+    #footer #name{
+        margin: 0 auto;
+    }
+
+    #footer #name img{
+        width: 5rem;
+    }
+
+    #footer #name a{
+        margin-left: -1.3rem;
+    }
+
+    #footer #name a h1{
+        margin-left: -2.4rem;
+    }
+
+    #menu {
+        margin-top: 1rem;
+        width: 2.3rem;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    #footer #name {
+        display: inline-block;
+    }
+
+    footer ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding-inline-start: 1rem;
+    }
+
+    footer ul li {
+        margin-top: 2rem;
+        margin-right: 2rem;
+    }
+
+    footer ul li svg {
+        width: 1.5rem;
+    }
+
+    footer ul li svg:hover {
+        width: 2rem;
+    }
+
+    #footer-logo {
+        margin-left: 0;
+    }
+
+    cite p {
+        font-size: 0.6rem;
+    }
+}
+
+
 @media (max-width:480px) {
     #name {
         margin-left: 3rem;
@@ -171,6 +274,12 @@ cite p {
     }
 
     #name img {
+        width: 6rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    #footer #name img {
         width: 4.5rem;
         padding: 0;
         margin: 0;
@@ -237,5 +346,29 @@ cite p {
 
     cite p {
         font-size: 0.5rem;
+    }
+}
+
+@media (max-width:370px) {
+    #name img {
+        width: 5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    #footer #name img {
+        width: 4.5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    #name {
+        margin-left: 1rem;
+    }
+
+    #menu {
+        margin-top: 0rem;
+        width: 1.7rem;
+        margin-right: 2rem;
     }
 }
