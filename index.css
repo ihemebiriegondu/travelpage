@@ -3,7 +3,7 @@ header {
 }
 
 #first-section {
-    background: url(/images/header-image.jpg);
+    background: url(./images/header-image.jpg);
     margin: 0;
     height: 59rem;
     background-position: center;
